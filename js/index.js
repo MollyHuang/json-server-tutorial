@@ -16,7 +16,7 @@ const rendrerPosts = async () => {
         <h2>${post.title}</h2>
         <p><small>${post.likes}</small></p>
         <p>${post.body.slice(0, 200)}</p>
-        <a href="/details.html">read more...</a>
+        <a href="/details.html?id=${post.id}">read more...</a>
       </div>
     `
   });
